@@ -9,11 +9,7 @@ Project goal is to provide a very clear and concise library of datastructures an
 
 ## Data Structures
 
-[Stacks](#stacks)
-
-[Queues](#queues)
-
-[Linked Lists](#linked-lists)
+* [Stacks](#stacks)
 
 ## Installation
 ```ruby
@@ -50,19 +46,4 @@ require 'rdata'
 
 ### More on Stacks
 [Stacks - Wiki Link](https://github.com/samdunne/rdata/wiki/Stacks)
-
-##<a name='queues'>Queues</a>
-
-### Initialization
-
-```ruby
-@queue = RData::Queue.new
-```
-
-### Operations
-
-```ruby
-@queue.enqueue(x) 	# => Returns 'x'
-@queue.dequeue  		# => Returns 'head'
-```
 
