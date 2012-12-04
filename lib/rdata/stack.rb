@@ -36,7 +36,7 @@ module RData
         end
 
         def is_empty?
-            (@top == 0) ? 'true' : 'false'
+            (@top == 0) ? true : false
         end
 
     end
