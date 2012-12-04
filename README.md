@@ -3,6 +3,18 @@
 [![Build Status](https://secure.travis-ci.org/samdunne/rdata.png?branch=master)](https://travis-ci.org/samdunne/rdata)
 [![Dependency Status](https://gemnasium.com/samdunne/rdata.png)](https://gemnasium.com/samdunne/rdata)
 
+## Purpose
+
+Project goal is to provide a very clear and concise library of datastructures and algorithms in Ruby. 
+
+## Data Structures
+
+[Stacks](#stacks)
+
+[Queues](#queues)
+
+[Linked Lists](#linked-lists)
+
 ## Installation
 ```ruby
 gem install rdata
@@ -19,7 +31,7 @@ gem 'rdata'
 require 'rdata'
 ```
 
-## Stacks
+##<a name='stacks'>Stacks</a>
 
 ### Initialization
 
@@ -38,3 +50,19 @@ require 'rdata'
 
 ### More on Stacks
 [Stacks - Wiki Link](https://github.com/samdunne/rdata/wiki/Stacks)
+
+##<a name='queues'>Queues</a>
+
+### Initialization
+
+```ruby
+@queue = RData::Queue.new
+```
+
+### Operations
+
+```ruby
+@queue.enqueue(x) 	# => Returns 'x'
+@queue.dequeue  		# => Returns 'head'
+```
+
