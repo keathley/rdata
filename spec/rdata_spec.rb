@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe RData do
+describe RData::Stack do
 
   let(:stack) { RData.Stack }
 
@@ -44,3 +44,5 @@ describe RData do
   end
 
 end
+
+
