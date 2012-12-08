@@ -20,6 +20,12 @@ describe RData::Stack do
         stack.pop
       }.to raise_error(StandardError)
     end
+    
+    it "should have initial elements if there is an array in the constructor" do
+      stack = RData.Stack([1,2,3])
+      stack.is_empty?.should eql("true")
+    end
+    
   end
 
   context "A stack with elements" do

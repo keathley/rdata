@@ -11,8 +11,8 @@ This is the Stack class. It allows easy implementation of stacks and use of thei
 module RData
   class Stack
 
-    def initialize
-      @stack = Array[]
+    def initialize(initial_array=[])
+      @stack = Array.new(initial_array)
       @top = 0
     end
 
