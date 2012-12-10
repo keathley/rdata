@@ -7,7 +7,7 @@ describe RData::Stack do
   context "An empty stack" do
 
     it "should be empty" do
-      stack.is_empty?.should eql("true")
+      stack.is_empty?.should be_true
     end
 
     it "should push an element" do
@@ -23,7 +23,7 @@ describe RData::Stack do
     
     it "should have initial elements if there is an array in the constructor" do
       stack = RData.Stack([1,2,3])
-      stack.is_empty?.should eql("true")
+      stack.is_empty?.should be_false
     end
     
   end
@@ -35,7 +35,7 @@ describe RData::Stack do
     end
 
     it "should not be empty" do
-      stack.is_empty?.should eql("false")
+      stack.is_empty?.should be_false
     end
 
     it "should reveal the top element" do

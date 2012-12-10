@@ -26,7 +26,7 @@ module RData
     end
 
     def pop
-      if self.is_empty? == "true"
+      if self.is_empty? == true
           raise '[underflow] Cannot pop data from an empty stack'
       else
           @top = @top - 1
@@ -35,7 +35,7 @@ module RData
     end
 
     def is_empty?
-      (@top == 0) ? 'true' : 'false'
+      @stack.empty?
     end
 
   end
