@@ -10,6 +10,7 @@ Project goal is to provide a very clear and concise library of datastructures an
 ## Data Structures
 
 * [Stacks](#stacks)
+* [Queue](#queues)
 
 ## Installation
 ```ruby
@@ -32,7 +33,7 @@ require 'rdata'
 ### Initialization
 
 ```ruby
-@stack = RData.Stack
+@stack = RData::Stack.new
 ```
 
 ### Operations
@@ -46,4 +47,27 @@ require 'rdata'
 
 ### More on Stacks
 [Stacks - Wiki Link](https://github.com/samdunne/rdata/wiki/Stacks)
+
+##<a name='queues'>Queues</a>
+
+### Initialization
+
+```ruby
+@queue = RData::Queue.new
+```
+
+### Operations
+
+```ruby
+@queue.enqueue(9) 	# => Returns '9'
+@queue.dequeue 			# => Returns 'head'
+@queue.peek 				# => Returns 'head' without removing it
+@queue.is_empty? 		# => Returns true/false
+```
+
+### More on Queues
+Coming Soon...
+
+
+
 
