@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe RData::Stack do
 
-  let(:stack) { RData.Stack }
+  let(:stack) { RData::Stack.new }
 
   context "An empty stack" do
 

@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe RData::Queue do
 
-  let(:queue) { RData.Queue }
+  let(:queue) { RData::Queue.new }
 
   context "An empty queue" do
 
